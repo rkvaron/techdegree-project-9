@@ -174,12 +174,12 @@ input {
   background: #ccc;
 }
 
-.traffic {
+/* .traffic {
   max-width: 1200px;
-    display: flex;
+  display: flex;
   justify-content: center;
   flex-wrap: wrap;
-}
+} */
 
 .alert {
   background-color: #7477bf;
@@ -191,6 +191,12 @@ input {
   border: 1px solid #4d4c72;
   border-radius: 5px;
   flex-basis: 100%;
+  color: #f7f7f7;
+  font-size: .8em;
+}
+
+#myChart {
+  color: #000;
 }
 
 /********* MEDIA QUERIES

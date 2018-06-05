@@ -1,7 +1,8 @@
+//Line chart
 // Our labels along the x-axis
-var years = [1500,1600,1700,1750,1800,1850,1900,1950,1999,2050];
+var dates = ['16-22','23-29','30-5','6-12','13-19','20-26','27-3','4-10','11-17','25-31'];
 // For drawing the lines
-var africa = [86,114,106,106,107,111,133,221,783,2478];
+var traffic = [0,600,753,698,1004,1533,1339,1600,1679,2200];
 var asia = [282,350,411,502,635,809,947,1402,3700,5267];
 var europe = [168,170,178,190,203,276,408,547,675,734];
 var latinAmerica = [40,20,10,16,24,38,74,167,508,784];
@@ -11,17 +12,28 @@ var ctx = document.getElementById("trafficChart");
 var myChart = new Chart(ctx, {
   type: 'line',
   data: {
-    labels: years,
+    labels: dates,
     datasets: [
       {
-        data: africa,
-        label: "Africa",
-        borderColor: "#3e95cd",
-        fill: false
+        data: traffic,
+        label: "traffic",
+        borderColor: "#7477bf",
+        fill: true,
+        backgroundColor: "rgba(164, 147, 232, 0.65)",
+        lineTension: 0,
+        pointBackgroundColor: "#fff",
+        pointRadius: 6,
+        pointHoverBorderWidth: 8,
+        pointHoverBorderColor: "#555"
       }
 
     ]
-  }
+  },
+  options: {
+        legend: {
+            display: false,
+          }
+        }
 });
 
 
@@ -30,27 +42,21 @@ var ctx = document.getElementById("dailyChart").getContext('2d');
 var myChart2 = new Chart(ctx, {
     type: 'bar',
     data: {
-        labels: ["Red", "Blue", "Yellow", "Green", "Purple", "Orange"],
+        labels: ["S", "M", "T", "W", "T", "F", "S"],
         datasets: [{
             label: '# of Votes',
-            data: [12, 19, 3, 5, 2, 3],
+            data: [100, 174, 59, 225, 111, 38, 88],
             backgroundColor: [
-                'rgba(255, 99, 132, 0.2)',
-                'rgba(54, 162, 235, 0.2)',
-                'rgba(255, 206, 86, 0.2)',
-                'rgba(75, 192, 192, 0.2)',
-                'rgba(153, 102, 255, 0.2)',
-                'rgba(255, 159, 64, 0.2)'
+                '#7477bf',
+                '#7477bf',
+                '#7477bf',
+                '#7477bf',
+                '#7477bf',
+                '#7477bf',
+                '#7477bf'
             ],
-            borderColor: [
-                'rgba(255,99,132,1)',
-                'rgba(54, 162, 235, 1)',
-                'rgba(255, 206, 86, 1)',
-                'rgba(75, 192, 192, 1)',
-                'rgba(153, 102, 255, 1)',
-                'rgba(255, 159, 64, 1)'
-            ],
-            borderWidth: 3
+
+            borderWidth: 2
         }]
     },
     options: {
@@ -60,7 +66,10 @@ var myChart2 = new Chart(ctx, {
                     beginAtZero:true
                 }
             }]
-        }
+        },
+        legend: {
+            display: false,
+          }
     }
 });
 

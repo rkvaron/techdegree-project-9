@@ -66,7 +66,7 @@
                     <path d="M14 0h-2c-1.1 0-2 .9-2 2v28c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V2c0-1.1-.9-2-2-2zm0 29c0 .6-.4 1-1 1s-1-.4-1-1V3c0-.6.4-1 1-1s1 .4 1 1v26zM4 9H2c-1.1 0-2 .9-2 2v19c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V11c0-1.1-.9-2-2-2zm0 20c0 .6-.4 1-1 1s-1-.4-1-1V12c0-.6.4-1 1-1s1 .4 1 1v17zm20-13h-2c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h2c1.1 0 2-.9 2-2V18c0-1.1-.9-2-2-2zm0 13c0 .6-.4 1-1 1s-1-.4-1-1V19c0-.6.4-1 1-1s1 .4 1 1v10z" fill="#fff"/>
                   </svg>
                 </a></li>
-              <li><a href="#" class="settings">
+              <li><a href="#" class="setting">
                   <svg class="icon" id="settings" xmlns="http://www.w3.org/2000/svg" width="25" viewBox="0 0 32 32">
                     <path d="M26 24H14.9c-.4-1.7-2-3-3.9-3s-3.4 1.3-3.9 3H6c-.6 0-1 .4-1 1s.4 1 1 1h1.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H26c.6 0 1-.4 1-1s-.4-1-1-1zm-15 3.4c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM26 8H14.9c-.4-1.7-2-3-3.9-3S7.6 6.3 7.1 8H6c-.6 0-1 .4-1 1s.4 1 1 1h1.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H26c.6 0 1-.4 1-1s-.4-1-1-1zm-15 3.4c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM26 16h-2.1c-.4-1.7-2-3-3.9-3s-3.4 1.3-3.9 3H6c-.6 0-1 .4-1 1s.4 1 1 1h10.1c.4 1.7 2 3 3.9 3s3.4-1.3 3.9-3H26c.6 0 1-.4 1-1s-.4-1-1-1zm-6 3.4c-1.3 0-2.4-1.1-2.4-2.4 0-1.3 1.1-2.4 2.4-2.4 1.3 0 2.4 1.1 2.4 2.4 0 1.3-1.1 2.4-2.4 2.4zM28 0H4C1.8 0 0 1.8 0 4v24c0 2.2 1.8 4 4 4h24c2.2 0 4-1.8 4-4V4c0-2.2-1.8-4-4-4zm2 28c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h24c1.1 0 2 .9 2 2v24z" fill="#fff"/>
                   </svg>
@@ -108,16 +108,15 @@
             </div>
             <div class="chart-sm daily-chart">
               <h3>Daily Traffic</h3>
-              <canvas id="dailyChart" width="350" height="350"></canvas>
+              <canvas id="dailyChart" width="350" height="200"></canvas>
             </div>
             <div class="chart-sm mobile-chart">
               <h3>Mobile Users</h3>
-              <canvas id="mobileChart" width="350" height="350"></canvas>
-              <button id="randomizeData">Randomize Data</button>
+              <canvas id="mobileChart" width="350" height="200"></canvas>
             </div>
           </div>
-          <div class="social">
-            <div class="chart ">
+          <div class="social chart">
+            <div class="social-chart-container">
               <h3>Social Stats</h3>
               <div class="social-chart">
                 <div class="social-card twitter">
@@ -156,155 +155,160 @@
               </div>
             </div>
           </div>
-
-          <div class="chart-sm newMembers">
-              <div class="members-chart">
-                <h3>New Members</h3>
-                <div class="member-info">
-                  <img src="img/user1.jpg" alt="Random User Photo">
-                  <div class="memberDetails">
-                    <h4>Victoria Chambers</h4>
-                    <p class="userEmail">victoriachambers80@example.com</p>
-                  </div>
-                  <p class="userDate">10/15/15</p>
-                </div>
-                <div class="member-info">
-                  <img src="img/user3.jpg" alt="Random User Photo">
-                  <div class="memberDetails">
-                    <h4>Dale Byrd</h4>
-                    <p class="userEmail">dalebyrd25080@example.com</p>
-                  </div>
-                  <p class="userDate">10/15/15</p>
-                </div>
-                <div class="member-info">
-                  <img src="img/user5.jpg" alt="Random User Photo">
-                  <div class="memberDetails">
-                    <h4>Dawn Wood</h4>
-                    <p class="userEmail">dawnwood16@example.com</p>
-                  </div>
-                    <p class="userDate">10/15/15</p>
-                </div>
-                <div class="member-info">
-                  <img src="img/user4.jpg" alt="Random User Photo">
-                  <div class="memberDetails">
-                    <h4>Dan Oliver</h4>
-                    <p class="userEmail">danoliver82@example.com</p>
-                  </div>
+            <div class="chart-sm newMembers">
+                <div class="members-chart">
+                  <h3>New Members</h3>
+                  <div class="member-info">
+                    <img src="img/user1.jpg" alt="Random User Photo">
+                    <div class="memberDetails">
+                      <h4>Victoria Chambers</h4>
+                      <p class="userEmail">victoriachambers80@example.com</p>
+                    </div>
                     <p class="userDate">10/15/15</p>
                   </div>
+                  <div class="member-info">
+                    <img src="img/user3.jpg" alt="Random User Photo">
+                    <div class="memberDetails">
+                      <h4>Dale Byrd</h4>
+                      <p class="userEmail">dalebyrd25080@example.com</p>
+                    </div>
+                    <p class="userDate">10/15/15</p>
+                  </div>
+                  <div class="member-info">
+                    <img src="img/user5.jpg" alt="Random User Photo">
+                    <div class="memberDetails">
+                      <h4>Dawn Wood</h4>
+                      <p class="userEmail">dawnwood16@example.com</p>
+                    </div>
+                    <p class="userDate">10/15/15</p>
+                  </div>
+                  <div class="member-info">
+                    <img src="img/user4.jpg" alt="Random User Photo">
+                    <div class="memberDetails">
+                      <h4>Dan Oliver</h4>
+                      <p class="userEmail">danoliver82@example.com</p>
+                    </div>
+                      <p class="userDate">10/15/15</p>
+                    </div>
+                  </div>
                 </div>
+            <div class="chart-sm activity ">
+              <div class="activity-chart ">
+                  <h3>Recent Activity</h3>
+                  <div class="activity-info">
+                    <img src="img/user1.jpg" alt="Random User Photo">
+                    <div class="activityDetails">
+                      <p>Victoria Chambers commented on YourApp's SEO tips</p>
+                      <p class="activityTiming">4 hours ago</p>
+                    </div>
+                    <h1>></h1>
+                  </div>
+                  <div class="activity-info">
+                    <img src="img/user3.jpg" alt="Random User Photo">
+                    <div class="activityDetails">
+                      <p>Dale Byrd like the post Facebook's changes for 2016</p>
+                      <p class="activityTiming">5 hours ago</p>
+                    </div>
+                    <h1>></h1>
+                  </div>
+                  <div class="activity-info">
+                    <img src="img/user5.jpg" alt="Random User Photo">
+                    <div class="activityDetails">
+                      <p>Dawn Chambers commented on Facebook's changes for 2016</p>
+                      <p class="activityTiming">5 hours ago</p>
+                    </div>
+                    <h1>></h1>
+                  </div>
+                  <div class="activity-info">
+                    <img src="img/user4.jpg" alt="Random User Photo">
+                    <div class="activityDetails">
+                      <p>Dan Oliver posted YourApp's SEO Tips</p>
+                      <p class="activityTiming">4 hours ago</p>
+                    </div>
+                    <h1>></h1>
+                  </div>
               </div>
-          <div class="chart-sm activity ">
-            <div class="activity-chart ">
-              <h3>Recent Activity</h3>
-                <div class="activity-info">
-                  <img src="img/user1.jpg" alt="Random User Photo">
-                  <div class="activityDetails">
-                    <p>Victoria Chambers commented on YourApp's SEO tips</p>
-                    <p class="activityTiming">4 hours ago</p>
-                  </div>
-                  <h1>></h1>
-                </div>
-                <div class="activity-info">
-                  <img src="img/user3.jpg" alt="Random User Photo">
-                  <div class="activityDetails">
-                    <p>Dale Byrd like the post Facebook's changes for 2016</p>
-                    <p class="activityTiming">5 hours ago</p>
-                  </div>
-                  <h1>></h1>
-                </div>
-                <div class="activity-info">
-                  <img src="img/user5.jpg" alt="Random User Photo">
-                  <div class="activityDetails">
-                    <p>Dawn Chambers commented on Facebook's changes for 2016</p>
-                    <p class="activityTiming">5 hours ago</p>
-                  </div>
-                  <h1>></h1>
-                </div>
-                <div class="activity-info">
-                  <img src="img/user4.jpg" alt="Random User Photo">
-                  <div class="activityDetails">
-                    <p>Dan Oliver posted YourApp's SEO Tips</p>
-                    <p class="activityTiming">4 hours ago</p>
-                  </div>
-                  <h1>></h1>
-                </div>
             </div>
-          </div>
-          <div class="chart-sm contact ">
-            <div class="contact-form ">
-              <h3>Message User</h3>
-              <form action="index.html" method="post">
-                <div class="user_search">
-             			<input type="text" id="user_search" name="user_search" placeholder="Search for User">
-                  <textarea id="comments" name="user_comments" placeholder="Message for User"></textarea>
-                </div>
-                <button type="submit">SEND</button>
-              </form>
+            <div class="chart-sm contact">
+              <div class="contact-container">
+                <h3>Message User</h3>
+                <form action="index.html" method="post" class="contact-chart">
+                  <div class="user-search">
+               			<input type="text" id="user_search" name="user_search" placeholder="Search for User">
+                    <textarea id="comments" name="user_comments" placeholder="Message for User"></textarea>
+                  </div>
+                  <button class="user_search" type="submit">SEND</button>
+                </form>
+              </div>
             </div>
-        </div>
-        <div class="chart-sm settings ">
-          <div class="settings ">
-            <h3>Settings</h3>
-            <div class="settings-panel">
-              <div>
-                <p>Send Email Notifications</p>
-                <!-- You want identical name attributes for radio buttons, where only one selection is possible-->
-                  <input type="radio" id="email_on" value="email_on" name="email_notifications"><label for="email_on" class="light">ON</label><br>
-                  <input type="radio" id="email_off" value="email_off" name="email_notifications"><label for="email_off" class="light">OFF</label><br>
-              </div>
-              <div>
-                <p>Set profile to public</p>
-                <!-- You want identical name attributes for radio buttons, where only one selection is possible-->
-                  <input type="radio" id="public_on" value="public_on" name="public_toggle"><label for="public_on" class="light">ON</label><br>
-                  <input type="radio" id="public_off" value="public_off" name="public_toggle"><label for="public_off" class="light">OFF</label><br>
-              </div>
-              <div class="timezone">
-        	 			<select id="timezone" name="timezone">
-                  <option selected hidden disabled>Select Timezone</option>
-                  <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
-                	<option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
-                	<option value="-10:00">(GMT -10:00) Hawaii</option>
-                	<option value="-09:50">(GMT -9:30) Taiohae</option>
-                	<option value="-09:00">(GMT -9:00) Alaska</option>
-                	<option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
-                	<option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
-                	<option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
-                	<option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
-                	<option value="-04:50">(GMT -4:30) Caracas</option>
-                	<option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
-                	<option value="-03:50">(GMT -3:30) Newfoundland</option>
-                	<option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
-                	<option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
-                	<option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
-                	<option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
-                	<option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
-                	<option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
-                	<option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
-                	<option value="+03:50">(GMT +3:30) Tehran</option>
-                	<option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
-                	<option value="+04:50">(GMT +4:30) Kabul</option>
-                	<option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
-                	<option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
-                	<option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
-                	<option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
-                	<option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
-                	<option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
-                	<option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
-                	<option value="+08:75">(GMT +8:45) Eucla</option>
-                	<option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
-                	<option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
-                	<option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
-                	<option value="+10:50">(GMT +10:30) Lord Howe Island</option>
-                	<option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
-                	<option value="+11:50">(GMT +11:30) Norfolk Island</option>
-                	<option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
-                	<option value="+12:75">(GMT +12:45) Chatham Islands</option>
-                	<option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
-                	<option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
-                </select>
-                <button type="submit">SAVE</button>
-                <button type="submit">CANCEL</button>
+            <div class="chart-sm settings">
+            <div class="settings-container">
+              <h3>Settings</h3>
+              <div class="settings-chart">
+                <div class="settings-chart-buttons">
+                  <p>Send Email Notifications</p>
+                  <label class="switch">
+                    <input type="checkbox" id="email_on" value="email_on" name="email_notifications">
+                    <span class="slider round">ON</span>
+                  </label>
+                </div>
+                <div class="settings-chart-buttons">
+                  <!-- Rounded switch -->
+                  <p>Set Profile to Public</p>
+                  <label class="switch">
+                    <input type="checkbox" d="public_on" value="public_on" name="public_toggle">
+                    <span class="slider round">ON</span>
+                  </label>
+                </div>
+                <div class="timezone">
+          	 			<select id="timezone" name="timezone">
+                    <option selected hidden disabled>Select Timezone</option>
+                    <option value="-12:00">(GMT -12:00) Eniwetok, Kwajalein</option>
+                  	<option value="-11:00">(GMT -11:00) Midway Island, Samoa</option>
+                  	<option value="-10:00">(GMT -10:00) Hawaii</option>
+                  	<option value="-09:50">(GMT -9:30) Taiohae</option>
+                  	<option value="-09:00">(GMT -9:00) Alaska</option>
+                  	<option value="-08:00">(GMT -8:00) Pacific Time (US &amp; Canada)</option>
+                  	<option value="-07:00">(GMT -7:00) Mountain Time (US &amp; Canada)</option>
+                  	<option value="-06:00">(GMT -6:00) Central Time (US &amp; Canada), Mexico City</option>
+                  	<option value="-05:00">(GMT -5:00) Eastern Time (US &amp; Canada), Bogota, Lima</option>
+                  	<option value="-04:50">(GMT -4:30) Caracas</option>
+                  	<option value="-04:00">(GMT -4:00) Atlantic Time (Canada), Caracas, La Paz</option>
+                  	<option value="-03:50">(GMT -3:30) Newfoundland</option>
+                  	<option value="-03:00">(GMT -3:00) Brazil, Buenos Aires, Georgetown</option>
+                  	<option value="-02:00">(GMT -2:00) Mid-Atlantic</option>
+                  	<option value="-01:00">(GMT -1:00) Azores, Cape Verde Islands</option>
+                  	<option value="+00:00">(GMT) Western Europe Time, London, Lisbon, Casablanca</option>
+                  	<option value="+01:00">(GMT +1:00) Brussels, Copenhagen, Madrid, Paris</option>
+                  	<option value="+02:00">(GMT +2:00) Kaliningrad, South Africa</option>
+                  	<option value="+03:00">(GMT +3:00) Baghdad, Riyadh, Moscow, St. Petersburg</option>
+                  	<option value="+03:50">(GMT +3:30) Tehran</option>
+                  	<option value="+04:00">(GMT +4:00) Abu Dhabi, Muscat, Baku, Tbilisi</option>
+                  	<option value="+04:50">(GMT +4:30) Kabul</option>
+                  	<option value="+05:00">(GMT +5:00) Ekaterinburg, Islamabad, Karachi, Tashkent</option>
+                  	<option value="+05:50">(GMT +5:30) Bombay, Calcutta, Madras, New Delhi</option>
+                  	<option value="+05:75">(GMT +5:45) Kathmandu, Pokhara</option>
+                  	<option value="+06:00">(GMT +6:00) Almaty, Dhaka, Colombo</option>
+                  	<option value="+06:50">(GMT +6:30) Yangon, Mandalay</option>
+                  	<option value="+07:00">(GMT +7:00) Bangkok, Hanoi, Jakarta</option>
+                  	<option value="+08:00">(GMT +8:00) Beijing, Perth, Singapore, Hong Kong</option>
+                  	<option value="+08:75">(GMT +8:45) Eucla</option>
+                  	<option value="+09:00">(GMT +9:00) Tokyo, Seoul, Osaka, Sapporo, Yakutsk</option>
+                  	<option value="+09:50">(GMT +9:30) Adelaide, Darwin</option>
+                  	<option value="+10:00">(GMT +10:00) Eastern Australia, Guam, Vladivostok</option>
+                  	<option value="+10:50">(GMT +10:30) Lord Howe Island</option>
+                  	<option value="+11:00">(GMT +11:00) Magadan, Solomon Islands, New Caledonia</option>
+                  	<option value="+11:50">(GMT +11:30) Norfolk Island</option>
+                  	<option value="+12:00">(GMT +12:00) Auckland, Wellington, Fiji, Kamchatka</option>
+                  	<option value="+12:75">(GMT +12:45) Chatham Islands</option>
+                  	<option value="+13:00">(GMT +13:00) Apia, Nukualofa</option>
+                  	<option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
+                  </select>
+                  <div class="timezone-buttons">
+                    <button type="submit">SAVE</button>
+                    <button type="submit">CANCEL</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>

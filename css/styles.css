@@ -54,8 +54,7 @@ span {
 }
 
 .userProfile {
-  flex-grow: .5;
-  padding-left: 5px;
+  padding-left: 15px;
   margin-right: 14px;
   border-left: #555 solid 1px;
   display: flex;
@@ -123,7 +122,149 @@ nav .icon {
 .selected {
   border-bottom: 3px solid #82ca9c;
 }
+/********** Alerts and Notifications **********/
 
+.alert {
+  background-color: #7477bf;
+  padding: .05em 1em;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  border: 1px solid #555;
+  border-radius: 5px;
+  color: #f7f7f7;
+  font-size: .8em;
+  height: 40px;
+  width: 90vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.alert button {
+  background-color: transparent;
+  font-weight: bold;
+  font-size: 1.2em;
+  border: none;
+}
+
+/* to change alert to hidden instead of display:none;*/
+.hidden {
+  display: none;
+}
+
+.notification {
+  position: relative;
+}
+
+.notification::after {
+    content: "o";
+    font-size: .5em;
+    font-weight: 700;
+    position: absolute;
+    color: rgb(66, 218, 82);
+    background-color: rgb(66, 218, 82);
+    top: -14px;
+    right: 12px;
+    padding: 0 2.5px;
+    border-radius: 50%;
+    opacity: 100;
+    /*content: attr(data-count);
+    opacity: 0;
+    -webkit-transform: scale(0.5);
+    transform: scale(0.5);
+    transition: transform, opacity;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-out;*/
+  }
+
+.notification img {
+  padding: 5px 0;
+  border-radius: 50%;
+  width: 30px;
+  float: left;
+  margin-right: 10px;
+}
+
+.notification h3 {
+  font-size: .9em;
+  padding: 0;
+  margin:0;
+}
+
+.notification-menu {
+
+}
+
+.notification-menu li {
+  background-color: #fff;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+
+/*****Notification Menu  *********/
+.dropbtn {
+}
+
+.dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    overflow: auto;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    top: 60px;
+    right: -150px;
+    border: #989898;
+    padding: 10px;
+    list-style: none;
+    width: 250px;
+    text-align: left;
+    font-size: .75em;
+
+}
+
+.dropdown-content h3 {
+  font-size: .95em;
+  font-weight: bold;
+  margin: 5px;
+  border-bottom: solid 1px #555;
+}
+
+.dropdown-content p {
+    color: black;
+    text-decoration: none;
+    display: block;
+}
+
+.triangle{
+  display: none;
+  position: absolute;
+  top: 24px;
+  left: -35px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 12px solid #f7f7f7;
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  border-radius: 6px 0px 0px 0px;
+  transform: rotate(45deg);
+  background: #f7f7f7;
+}
+
+.show {display:block;}
 
 
 /************** MAIN  STYLES *********/
@@ -156,7 +297,6 @@ nav .icon {
 .search-container {
   margin-right: 10px;
   align-items: baseline;
-
 }
 
 input {
@@ -179,106 +319,6 @@ input {
   background: #ccc;
 }
 
-/********** Alerts and Notifications **********/
-
-.alert {
-  background-color: #7477bf;
-  padding: .05em 1em;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 15px;
-  border: 1px solid #555;
-  border-radius: 5px;
-  color: #f7f7f7;
-  font-size: .8em;
-  height: 40px;
-  width: 90vw;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.alert button {
-  background-color: transparent;
-  font-weight: bold;
-  font-size: 1.2em;
-  border: none;
-}
-
-/* to change alert to hidden instead of display:none;
-.hidden {
-  display: none;
-} */
-
-.notification {
-  position: relative;
-}
-
-.notification::after {
-    content: "o";
-    font-size: .5em;
-    font-weight: 700;
-    position: absolute;
-    color: rgb(66, 218, 82);
-    background-color: rgb(66, 218, 82);
-    top: -8px;
-    right: -8px;
-    padding: 0 2.5px;
-    border-radius: 50%;
-    opacity: 100;
-    /*content: attr(data-count);
-    opacity: 0;
-    -webkit-transform: scale(0.5);
-    transform: scale(0.5);
-    transition: transform, opacity;
-    transition-duration: 0.3s;
-    transition-timing-function: ease-out;*/
-  }
-
-.notification img {
-  padding: 5px 0;
-  border-radius: 50%;
-  width: 30px;
-  float: left;
-  margin-right: 10px;
-}
-
-.notification h3 {
-  font-size: .9em;
-  padding: 0;
-  margin:0;
-}
-
-.notification-menu {
-  position: absolute;
-  top: 40px;
-  right: -250px;
-  background-color: #e5e5e5;
-  border: #989898;
-  padding: 10px;
-  list-style: none;
-  width: 250px;
-  display: inline-block;
-  text-align: left;
-}
-
-.notification-menu li {
-  background-color: #fff;
-  padding: 10px;
-  margin-bottom: 10px;
-}
-
-.notification-menu h4 {
-  font-size: .85em;
-  font-weight: bold;
-  margin: 5px;
-}
-
-.notification-menu p {
-  font-size: .75em;
-  margin:5px;
-}
 
 /************Chart Styles***********/
 .traffic {
@@ -294,12 +334,6 @@ input {
   padding-left: 0;
 }
 
-/* .chart {
-  padding: 1em;
-  width: 90%;
-  margin-left: 1em;
-  margin-right: auto;
-} */
 .chart {
   width: 100%;
 }
@@ -552,6 +586,60 @@ select {
   height: 150px;
 }
 
+/* .tool {
+  cursor: help;
+  position: relative;
+}
+
+.tool::before,
+.tool::after {
+  position: absolute;
+  opacity: 0;
+  z-index: -100;
+}
+
+.tool:hover::before,
+.tool:hover::after,
+.tool:focus::before,
+.tool:focus::after {
+  opacity: 1;
+  z-index: 100;
+  transform: scale(1) translateY(0);
+}
+
+.tool::before {
+  border-style: solid;
+  border-width: 1em .75em 0 .75em;
+  border-color: #3E474f transparent transparent transparent;
+  bottom: 100%;
+  margin-left: -.5em;
+  content: "";
+  transform: scale(.6) translateY(-90%);
+  transition: all .65s cubic-bezier(.85, -0.18, .31 1.26), opacity .65s .5s;
+}
+
+.tool:hover::before,
+.too:focus::before {
+  transition-delay: .2s;
+}
+
+.tool::after {
+  background: #3e474f;
+  border-radius: .25em;
+  bottom: 180%;
+  color: #edef10;
+  width: 17.5em;
+  padding: 1em;
+  margin-left: -8.75em;
+  content: attr(data-tip);
+  transform: scale(.6) translateY(50%);
+  transition: all .65s cubic-bezier(.85, -0.18, .31 1.26), .25;
+}
+
+.tool:hover::after,
+.too:focus::after {
+  transition-delay: 0s;
+} */
 
 /* The settings buttons are checkboxes turned into sliders. */
 /*switch - the box around the slider */
@@ -565,7 +653,9 @@ select {
 }
 
 /* Hide default HTML checkbox */
-.switch input {display:none;}
+.switch input {
+  display:none;
+}
 
 /* The slider */
 .slider {
@@ -612,21 +702,16 @@ input:checked + .slider:before {
 .slider.round {
   border-radius: 25px;
   padding: 5px 0 0 15px;
-  color: #b2b2b2;;
+  color: #b2b2b2;
   transition: .6s;
 }
-
 
 .slider.round:before {
   border-radius: 50%;
 }
 
 .settings-chart > * {
-  padding-bottom: 25px;
-}
-
-select {
-  color: #e3dada;
+  padding-bottom: 27px;
 }
 
 
@@ -701,6 +786,11 @@ option {
 
   .search-container {
     margin-right: 50px;
+  }
+
+  .dropdown-content {
+    top: 25px;
+    right: -192px;
   }
 
   .main {

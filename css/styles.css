@@ -95,7 +95,7 @@ nav {
   background-color: #4d4c72;
   height:40px;
   position: fixed; /* stay in place */
-  top: 40px; /* Stay at the top  */
+  top: 40px; /* stay at the top  */
   left: 0;
   overflow-x: hidden; /* Disable horizontal scroll */
 }
@@ -870,6 +870,7 @@ option {
   .newMembers, .activity, .settings, .contact,
   .newMembers h3, .activity h3 {
     padding: 1em;
+
   }
   .newMembers > *, .activity > * {
     flex: 1 100%;
@@ -890,8 +891,16 @@ option {
     margin-left: 3em;
     align-items: center;
     justify-content: center;
-
+    margin: 0 auto;
     }
+  .newMembers, .contact {
+    margin-left: auto;
+  }
+
+  .activity, .settings {
+    margin-right: auto;
+  }
+
   .chart-sm {
     max-width: 500px;
     padding-left: 3em;

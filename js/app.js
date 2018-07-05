@@ -38,3 +38,19 @@ function changeTimezoneColor() {
 timezone.addEventListener('click', ()=> {
   changeTimezoneColor();
 });
+
+/* Nav menu selected item changes when clicked */
+
+/* onSubmit messageUser form gives confirmation message to user */
+
+const messageform = document.getElementById('messageUser');
+const submitP = document.getElementById('submit_message');
+const input = document.getElementById('user_search');
+const textarea = document.getElementById('comments');
+
+messageform.addEventListener('submit', (e) => {
+  e.preventDefault();
+  input.value = '';
+  textarea.value = '';
+  submitP.innerHTML = "Your message has been sent.";
+});

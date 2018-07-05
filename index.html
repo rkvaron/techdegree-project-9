@@ -4,9 +4,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Web App Dashboard</title>
-    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,600" rel="stylesheet">
-    <link rel="stylesheet" href="css/normalize.css">
-    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,600" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="css/normalize.css" type="text/css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
     <style>
     	canvas {
     		-moz-user-select: none;
@@ -30,7 +30,7 @@
               <div class="notification /dropbtn">
                 <div id="myDropdown" class="dropdown-content ">
                   <h3>Notifications</h3>
-                    <ul class="" id="">
+                    <ul>
                       <li>
                        <img src="img/user3.jpg" alt="Random User Photo">
                        <p><span>Martha Stewart</span> commented on your post.</p>
@@ -106,7 +106,7 @@
                   <li>Monthly</li>
                 </ul>
               </div>
-                <canvas id="trafficChart" width="400" height="150" max-width="95vw"></canvas>
+                <canvas id="trafficChart" width="400" height="150"></canvas>
             </div>
             <div class="chart-sm daily-chart">
               <h3>Daily Traffic</h3>
@@ -259,7 +259,7 @@
                   <!-- Rounded switch -->
                   <p>Set Profile to Public</p>
                   <label class="switch">
-                    <input type="checkbox" d="public_on" value="public_on" name="public_toggle">
+                    <input type="checkbox" id="public_on" value="public_on" name="public_toggle">
                     <span class="slider round">ON</span>
                   </label>
                 </div>
@@ -317,9 +317,11 @@
           </div>
       </div>
       </div>
-    </div>
-  </body>
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+
+
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"> </script>
       <script src="js/charts.js"> </script>
       <script src="js/app.js"> </script>
+
+  </body>
 </html>

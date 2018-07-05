@@ -41,6 +41,8 @@ timezone.addEventListener('click', ()=> {
 
 /* Nav menu selected item changes when clicked */
 
+/* Form Validation for messageUser */
+
 /* onSubmit messageUser form gives confirmation message to user */
 
 const messageform = document.getElementById('messageUser');

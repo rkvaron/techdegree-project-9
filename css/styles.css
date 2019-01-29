@@ -157,7 +157,7 @@ nav .icon {
   position: relative;
 }
 
-.notification::after {
+.notification:after {
     content: "o";
     font-size: .5em;
     font-weight: 700;
@@ -234,7 +234,9 @@ nav .icon {
   border-bottom: solid 1px #555;
 }
 
-.dropdown-content p {
+.dropdown-content li {
+    background-color: #ffffff);
+    padding: 2px;
     color: black;
     text-decoration: none;
     display: block;
@@ -249,9 +251,9 @@ nav .icon {
   border-right: 12px solid transparent;
   border-bottom: 12px solid #f7f7f7;
   position: absolute;
-  height: 15px;
+  height: 16px;
   width: 15px;
-  border-radius: 6px 0px 0px 0px;
+  border-radius: 5px 0px 0px 0px;
   transform: rotate(45deg);
   background: #f7f7f7;
 }

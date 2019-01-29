@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Web App Dashboard</title>
+    <title>Web App Dashboard: RKV App</title>
     <link href="https://fonts.googleapis.com/css?family=Gothic+A1:300,400,600" rel="stylesheet" type="text/css">
     <link rel="stylesheet" href="css/normalize.css" type="text/css">
     <link rel="stylesheet" href="css/styles.css" type="text/css">
@@ -24,10 +24,11 @@
               <svg id="bell" xmlns="http://www.w3.org/2000/svg" width="20" viewBox="0 0 32 32">
                 <path d="M24 18v-8c0-5.5-4.5-10-10-10S4 4.5 4 10v8l-4 8h9.1c.5 2.3 2.5 4 4.9 4s4.4-1.7 4.9-4H28l-4-8zM14 28c-1.3 0-2.4-.8-2.8-2h5.6c-.4 1.2-1.5 2-2.8 2zM3 24l3-6v-8c0-4.4 3.6-8 8-8s8 3.6 8 8v8l3 6H3z" fill="#fff"/>
               </svg>
+              <div class="notificationAlert"></div>
             </div>
             <div class="dropdown">
               <span class="triangle" id="triangle"></span>
-              <div class="notification /dropbtn">
+              <div id="notification" class="notification /dropbtn">
                 <div id="myDropdown" class="dropdown-content ">
                   <h3>Notifications</h3>
                     <ul>
@@ -37,7 +38,7 @@
                      </li>
                      <li>
                        <img src="img/user1.jpg" alt="Random User Photo">
-                       <p><span>John Stewart</span> retweeted your post.</p>
+                       <p><span>Justin Bieber</span> retweeted your post.</p>
                      </li>
                    </ul>
                 </div>
@@ -237,8 +238,8 @@
                 <p id="submit_message"></p>
                 <form action="index.html" method="post" class="contact-chart" id="messageUser">
                   <div class="user-search">
-               			<input type="text" id="user_search" name="user_search" placeholder="Search for User" required ><span class="tool" data-tip="Please enter the user's name." tabindex="1"></span>
-                    <textarea id="comments" name="user_comments" placeholder="Message for User" required></textarea>
+               			<input type="text" id="user_search" name="user_search" placeholder="Search for User"  />
+                    <textarea id="comments" name="user_comments" placeholder="Message for User" ></textarea>
                   </div>
                   <button class="user_search" type="submit" id="messageButton">SEND</button>
                 </form>
@@ -308,7 +309,7 @@
                   	<option value="+14:00">(GMT +14:00) Line Islands, Tokelau</option>
                   </select>
                   <div class="timezone-buttons">
-                    <button type="submit">SAVE</button>
+                    <button class="saveButton" type="submit">SAVE</button>
                     <button type="submit">CANCEL</button>
                   </div>
                 </div>

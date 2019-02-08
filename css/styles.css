@@ -533,6 +533,7 @@ select {
   border: 1px solid #7477bf;
 }
 
+
 .contact-container, .settings-container  {
   /* margin-left: 20%;
   margin-right: auto; */
@@ -580,19 +581,21 @@ select {
   height: 150px;
 }
 
-/* .tool {
-  cursor: help;
+/*Tool Tips for User Messaging*/
+
+
+.tool {
   position: relative;
 }
 
 .tool::before,
 .tool::after {
   position: absolute;
-  opacity: 0;
-  z-index: -100;
+  opacity: 100;
+  z-index: 100;
 }
 
-.tool:hover::before,
+/*.tool:hover::before,
 .tool:hover::after,
 .tool:focus::before,
 .tool:focus::after {
@@ -600,43 +603,37 @@ select {
   z-index: 100;
   transform: scale(1) translateY(0);
 }
-
+*/
 .tool::before {
   border-style: solid;
   border-width: 1em .75em 0 .75em;
-  border-color: #3E474f transparent transparent transparent;
-  bottom: 100%;
-  margin-left: -.5em;
+  border-color: #4d4c72 transparent transparent transparent;
+  margin-left: 9.5em;
   content: "";
-  transform: scale(.6) translateY(-90%);
-  transition: all .65s cubic-bezier(.85, -0.18, .31 1.26), opacity .65s .5s;
+ 
 }
 
-.tool:hover::before,
-.too:focus::before {
-  transition-delay: .2s;
-}
 
 .tool::after {
-  background: #3e474f;
+  background: #4d4c72;
   border-radius: .25em;
   bottom: 180%;
-  color: #edef10;
-  width: 17.5em;
+  color: rgb(66, 218, 82);
   padding: 1em;
-  margin-left: -8.75em;
+  margin-left: 5em;
   content: attr(data-tip);
   transform: scale(.6) translateY(50%);
   transition: all .65s cubic-bezier(.85, -0.18, .31 1.26), .25;
 }
 
 .tool:hover::after,
-.too:focus::after {
+.tool:focus::after {
   transition-delay: 0s;
-} */
+} 
 
 /* The settings buttons are checkboxes turned into sliders. */
 /*switch - the box around the slider */
+
 .switch {
   position: relative;
   display: inline-block;

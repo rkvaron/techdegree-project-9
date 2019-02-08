@@ -56,38 +56,36 @@ timezone.addEventListener('click', ()=> {
 
 const messageform = document.getElementById('messageUser');
 const submitP = document.getElementById('submit_message');
-const input = document.getElementById('user_search');
-const textarea = document.getElementById('comments');
 const messageButton = document.getElementById('messageButton');
+const confirmMessage = "Your message was sent.";
+const denyMessage = "Please fill out both the user name and the message fields to send a message.";
 
 
 
-/* Form Validation for messageUser */
+messageButton.addEventListener('click', (e) => {
 
-function validateForm(e) {
-    
-        // add tooltip here?? 
-        //<span class="tool" data-tip="Please enter the user's name." tabindex="1"></span>
-    }
+let input = document.getElementById('user_search').value;
+let textarea = document.getElementById('comments').value;
 
+  e.preventDefault();
+  
 
-
-
-/* onSubmit messageUser form gives confirmation message to user */
-
-
-messageform.addEventListener('submit', (e) => {
-  let x = input.value;
-    let y = textarea.value;
-    e.preventDefault();
-    if (x || y == "") {
-      console.log("missing input");
-      //show tooltip to add in an input
-    } else {
-
-  input.value = '';
-  textarea.value = '';
-  submitP.innerHTML = "Your message has been sent.";
+  if(input == null || input == "") {
+    submitP.classList.add("tool");
+    console.log(" missing user");
+    submitP.setAttribute('data-tip', denyMessage);
+    return;
+    } else if(textarea == null || textarea == "") {
+      submitP.classList.add("tool");
+    console.log(" missing message");
+    submitP.setAttribute('data-tip', denyMessage);
+    return;
+    } else if(input != "" && textarea != "") {
+      console.log("working!");
+      document.getElementById('user_search').value= ' ';
+      document.getElementById('comments').value = ' ';
+      submitP.classList.add("tool");
+      submitP.setAttribute('data-tip', confirmMessage);
     }
   
 });
